@@ -1,11 +1,12 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      Welcome stranger!
-    </div>
-  );
+import Routes from './scenes/Routes';
+
+export default function App() {
+    return (
+        <Router>
+            <Routes />
+        </Router>
+    );
 }
-
-export default App;
